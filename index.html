@@ -7,15 +7,524 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .over-slider {
+            z-index: 2;
+        }
+
+        .slick-list {
+            overflow: visible;
+            padding: 0 20% 0 0;
+            position: relative;
+        }
+
+        .slick-list::after {
+            content: ' ';
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            width: 4000px;
+            right: 100%;
+            background-color: #FAFAFA;
+        }
+    </style>
 </head>
 
 <body>
     <section>
-
+        <nav class="position-fixed w-100 bg-white py-3">
+            <div class="container d-flex justify-content-between">
+                <div class="heading d-flex align-items-center gap-2">
+                    <div>
+                        <img src="./assets/images/heading_img.svg" alt="fire">
+                    </div>
+                    <p class="heading_text">Lasles<span>VPN</span></p>
+                </div>
+                <input type="checkbox" id="menuicon" hidden>
+                <div class="d-flex align-items-center gap-3 lg-view">
+                    <p class="nav_item">Home</p>
+                    <p class="nav_item">About</p>
+                    <p class="nav_item">Features</p>
+                    <p class="nav_item">Testinomial</p>
+                    <p class="nav_item">Price</p>
+                </div>
+                <div class="d-flex align-items-center gap-3 sm-hidden">
+                    <p class="sign">Sign In</p>
+                    <button class="signup">Sign Up</button>
+                </div>
+                <label for="menuicon" class="d-md-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </nav>
     </section>
+
+    <section class="pt-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="lorem">Want anything to be easy with <span class="lasles">LaslesVPN.</span></p>
+                    <p class="lorem_text">Provide a network for all your needs with ease and fun using
+                        <span class="vpn">LaslesVPN</span> discover interesting
+                        features from us.
+                    </p>
+                    <button class="get_started shadow">Get Started</button>
+                </div>
+                <div class="col-lg-6 pt">
+                    <img src="./assets/images/first_cont_img.png" alt="a boy" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-120">
+        <div class="container shadow p-4 rounded-2">
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center gap-3 brdr">
+                    <div class="svg_box d-flex align-items-center justify-content-center w-h">
+                        <img src="./assets/images/Third_cont_svg_1.svg" alt="...">
+                    </div>
+                    <div class="flex flex-column">
+                        <p class="num">90+</p>
+                        <p class="user">Users</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center gap-3 brdr">
+                    <div class="svg_box d-flex align-items-center justify-content-center w-h">
+                        <img src="./assets/images/Third_cont_svg_2.svg" alt="...">
+                    </div>
+                    <div class="flex flex-column">
+                        <p class="num">30+</p>
+                        <p class="user">Locations</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center gap-3">
+                    <div class="svg_box d-flex align-items-center justify-content-center w-h">
+                        <img src="./assets/images/Third_cont_svg_3.svg" alt="...">
+                    </div>
+                    <div class="flex flex-column">
+                        <p class="num">50+</p>
+                        <p class="user">Servers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./assets/images/forth_cont.png" alt="..." class="w-100 h-100">
+                </div>
+                <div class="col-lg-6 pt-105">
+                    <p class="features">We Provide Many Features You Can Use</p>
+                    <p class="explore pt-3">You can explore the features that we provide with fun and have their own
+                        functions each feature.
+                    </p>
+                    <div class="d-flex flex-column pt-3">
+                        <div class="d-flex gap-3">
+                            <img src="./assets/images/Vector_tick.svg" alt="...">
+                            <p class="headlines">Powerfull online protection.</p>
+                        </div>
+                        <div class="d-flex gap-3 pt-2">
+                            <img src="./assets/images/Vector_tick.svg" alt="...">
+                            <p class="headlines">Internet without borders.</p>
+                        </div>
+                        <div class="d-flex gap-3 pt-2">
+                            <img src="./assets/images/Vector_tick.svg" alt="...">
+                            <p class="headlines">Supercharged VPN</p>
+                        </div>
+                        <div class="d-flex gap-3 pt-2">
+                            <img src="./assets/images/Vector_tick.svg" alt="...">
+                            <p class="headlines">No specific time limits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-120 bg">
+        <div class="container">
+            <p class="plan">Choose Your Plan</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <p class="choose pt-3">Let's choose the package that is best for you and explore it happily and
+                    cheerfully.
+                </p>
+            </div>
+            <div class="row pt-120">
+                <div class="col-lg-4 col-md-6 pt-40">
+                    <div class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4">
+                        <div class="pt-5">
+                            <img src="./assets/images/fifth_cont_img.png" alt="a box">
+                        </div>
+                        <p class="free text-center pt-3">Free Plan</p>
+                        <div class="d-flex flex-column align-items-start justify-content-center pt-4">
+                            <div class="d-flex gap-3">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Unlimited Bandwitch</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Encrypted Connection</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">No Traffic Logs</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Works on All Devices</p>
+                            </div>
+                        </div>
+                        <p class="free_plan pb-3 pt-120">Free</p>
+                        <button class="px-5 py-2 changes shadow">Select</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-40">
+                    <div class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4">
+                        <div class="pt-5">
+                            <img src="./assets/images/fifth_cont_img.png" alt="a box">
+                        </div>
+                        <p class="free text-center pt-3">Free Plan</p>
+                        <div class="d-flex flex-column align-items-start justify-content-center pt-4">
+                            <div class="d-flex gap-3">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Unlimited Bandwitch</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Encrypted Connection</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Yes Traffic Logs</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Works on All Devices</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Connect Anyware</p>
+                            </div>
+                        </div>
+                        <p class="money pb-3 pt-83">$9<span class="mon">/mon</span></p>
+                        <button class="px-5 py-2 changes shadow">Select</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-40">
+                    <div class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4">
+                        <div class="pt-5">
+                            <img src="./assets/images/fifth_cont_img.png" alt="a box">
+                        </div>
+                        <p class="free text-center pt-3">Free Plan</p>
+                        <div class="d-flex flex-column align-items-start justify-content-center pt-4">
+                            <div class="d-flex gap-3">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Unlimited Bandwitch</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Encrypted Connection</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Yes Traffic Logs</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Works on All Devices</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Connect Anyware</p>
+                            </div>
+                            <div class="d-flex gap-3 pt-2">
+                                <img src="./assets/images/tick.svg" alt="tick">
+                                <p class="benifits">Get New Features</p>
+                            </div>
+                        </div>
+                        <p class="money pb-3 pt-45">$12<span class="mon">/mon</span></p>
+                        <button class="px-5 py-2 changes shadow">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-120 bg">
+        <div class="container">
+            <p class="network_prop text-center">Huge Global Network of Fast VPN</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <p class="other_prop text-center">See <span class="lasles_vpn">LaslesVPN</span> everywhere to make it
+                    easier
+                    for
+                    you when
+                    you move locations.
+                </p>
+            </div>
+            <div class="pt-120 d-flex align-items-center justify-content-center">
+                <img src="./assets/images/globe_img.png" alt="globe" class="w-100">
+            </div>
+            <marquee width="100%" direction="right" height="auto">
+                <div class="d-flex justify-content-between align-item gap-4">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/Company_img_1.png" alt="..." class="w-100">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/Company_img_2.png" alt="..." class="w-100">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/Company_img_3.png" alt="..." class="w-100">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/Company_img_4.png" alt="..." class="w-100">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/images/Company_img_5.png" alt="..." class="w-100">
+                    </div>
+                </div>
+            </marquee>
+    </section>
+
+    <section class="pt-120 bg">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">
+                <p class="trust text-center">Trusted by Thousands of Happy Customer</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center pt-4">
+                <p class="stories text-center">These are the stories of our customers who have joined us with great
+                    pleasure when using this crazy feature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg overflow-hidden">
+        <div class="container">
+            <div class="slick_slider">
+                <div class="box_1 shadow p-3 rounded-2 min-h-250">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                            <img src="./assets/images/card_svg_1.svg" alt="a boy">
+                            <div>
+                                <p class="name">Vizeh Robert</p>
+                                <p class="place">Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2">
+                            <p class="rate">4.5</p>
+                            <img src="./assets/images/star.svg" alt="...">
+                        </div>
+                    </div>
+                    <p class="wow">“Wow... I am very happy to use this VPN, it turned out to be more than my
+                        expectations
+                        and so far
+                        there have been no
+                        problems. LaslesVPN always the best”.</p>
+                </div>
+                <div class="box_1 shadow p-3 rounded-2 min-h-250">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                            <img src="./assets/images/card_svg_1.svg" alt="a boy">
+                            <div>
+                                <p class="name">Vizeh Robert</p>
+                                <p class="place">Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2">
+                            <p class="rate">4.5</p>
+                            <img src="./assets/images/star.svg" alt="...">
+                        </div>
+                    </div>
+                    <p class="wow">“Wow... I am very happy to use this VPN, it turned out to be more than my
+                        expectations
+                        and so far
+                        there have been no
+                        problems. LaslesVPN always the best”.</p>
+                </div>
+                <div class="box_1 shadow p-3 rounded-2 min-h-250">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                            <img src="./assets/images/card_svg_1.svg" alt="a boy">
+                            <div>
+                                <p class="name">Vizeh Robert</p>
+                                <p class="place">Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2">
+                            <p class="rate">4.5</p>
+                            <img src="./assets/images/star.svg" alt="...">
+                        </div>
+                    </div>
+                    <p class="wow">“Wow... I am very happy to use this VPN, it turned out to be more than my
+                        expectations
+                        and so far
+                        there have been no
+                        problems. LaslesVPN always the best”.</p>
+                </div>
+                <div class="box_1 shadow p-3 rounded-2 min-h-250">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                            <img src="./assets/images/card_svg_1.svg" alt="a boy">
+                            <div>
+                                <p class="name">Vizeh Robert</p>
+                                <p class="place">Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2">
+                            <p class="rate">4.5</p>
+                            <img src="./assets/images/star.svg" alt="...">
+                        </div>
+                    </div>
+                    <p class="wow">“Wow... I am very happy to use this VPN, it turned out to be more than my
+                        expectations
+                        and so far
+                        there have been no
+                        problems. LaslesVPN always the best”.</p>
+                </div>
+                <div class="box_1 shadow p-3 rounded-2 min-h-250">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                            <img src="./assets/images/card_svg_1.svg" alt="a boy">
+                            <div>
+                                <p class="name">Vizeh Robert</p>
+                                <p class="place">Warsaw, Poland</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-2">
+                            <p class="rate">4.5</p>
+                            <img src="./assets/images/star.svg" alt="...">
+                        </div>
+                    </div>
+                    <p class="wow">“Wow... I am very happy to use this VPN, it turned out to be more than my
+                        expectations
+                        and so far
+                        there have been no
+                        problems. LaslesVPN always the best”.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg pb-5">
+        <div class="container d-flex justify-content-end gap-4 pt-30">
+            <button class="prev p-3 round shadow">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.75 7.74961H3.925L8.4625 2.29961C8.67467 2.04434 8.77675 1.71524 8.74628 1.38471C8.7158 1.05417 8.55527 0.749285 8.3 0.537112C8.04473 0.324939 7.71563 0.222862 7.3851 0.253336C7.05456 0.283811 6.74967 0.444341 6.5375 0.699612L0.2875 8.19961C0.245451 8.25927 0.207849 8.32194 0.175 8.38711C0.175 8.44961 0.175 8.48711 0.0875002 8.54961C0.0308421 8.69294 0.0011764 8.8455 0 8.99961C0.0011764 9.15372 0.0308421 9.30629 0.0875002 9.44961C0.0875002 9.51211 0.0874998 9.54961 0.175 9.61211C0.207849 9.67729 0.245451 9.73996 0.2875 9.79961L6.5375 17.2996C6.65503 17.4407 6.8022 17.5542 6.96856 17.632C7.13491 17.7097 7.31636 17.7499 7.5 17.7496C7.79207 17.7502 8.07511 17.6485 8.3 17.4621C8.42657 17.3572 8.5312 17.2283 8.60789 17.0829C8.68458 16.9374 8.73183 16.7783 8.74692 16.6146C8.76202 16.4509 8.74466 16.2858 8.69586 16.1288C8.64705 15.9718 8.56775 15.8259 8.4625 15.6996L3.925 10.2496H18.75C19.0815 10.2496 19.3995 10.1179 19.6339 9.8835C19.8683 9.64907 20 9.33113 20 8.99961C20 8.66809 19.8683 8.35015 19.6339 8.11573C19.3995 7.88131 19.0815 7.74961 18.75 7.74961Z"
+                        fill="#F53838" />
+                </svg>
+            </button>
+            <button class="next p-3 round shadow">
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.25 7.74961H16.075L11.5375 2.29961C11.3253 2.04434 11.2232 1.71524 11.2537 1.38471C11.2842 1.05417 11.4447 0.749285 11.7 0.537112C11.9553 0.324939 12.2844 0.222862 12.6149 0.253336C12.9454 0.283811 13.2503 0.444341 13.4625 0.699612L19.7125 8.19961C19.7545 8.25927 19.7922 8.32194 19.825 8.38711C19.825 8.44961 19.825 8.48711 19.9125 8.54961C19.9692 8.69294 19.9988 8.8455 20 8.99961C19.9988 9.15372 19.9692 9.30629 19.9125 9.44961C19.9125 9.51211 19.9125 9.54961 19.825 9.61211C19.7922 9.67729 19.7545 9.73996 19.7125 9.79961L13.4625 17.2996C13.345 17.4407 13.1978 17.5542 13.0314 17.632C12.8651 17.7097 12.6836 17.7499 12.5 17.7496C12.2079 17.7502 11.9249 17.6485 11.7 17.4621C11.5734 17.3572 11.4688 17.2283 11.3921 17.0829C11.3154 16.9374 11.2682 16.7783 11.2531 16.6146C11.238 16.4509 11.2553 16.2858 11.3041 16.1288C11.3529 15.9718 11.4322 15.8259 11.5375 15.6996L16.075 10.2496H1.25C0.91848 10.2496 0.600536 10.1179 0.366116 9.8835C0.131695 9.64907 0 9.33113 0 8.99961C0 8.66809 0.131695 8.35015 0.366116 8.11573C0.600536 7.88131 0.91848 7.74961 1.25 7.74961Z"
+                        fill="#F53838" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <section class="lg rounded-3">
+        <div class="container shadow p-4 d-flex justify-content-lg-between align-items-center">
+            <div class="d-flex flex-column align-items-start">
+                <p class="sub_text mx-width">Subscribe Now for Get Special Features!</p>
+                <p class="random">Let's subscribe with us and find the fun.</p>
+            </div>
+            <div>
+                <button class="subscribe shadow px-5 py-3 border-0 rounded-2">Subscribe Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg pt-83">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="heading d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./assets/images/heading_img.svg" alt="fire">
+                        </div>
+                        <p class="heading_text">Lasles<span>VPN</span></p>
+                    </div>
+                    <p class="footer_lorem pt-3"><span class="lasle">LaslesVPN</span> is a private virtual network that has unique
+                        features and has
+                        high security.</p>
+                    <div class="d-flex gap-3 pt-3">
+                        <img src="./assets/images/facebook.svg" alt="...">
+                        <img src="./assets/images/twitter.svg" alt="...">
+                        <img src="./assets/images/instagram.svg" alt="...">
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        $('.slick_slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            prevArrow: '.prev',
+            nextArrow: '.next',
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>
