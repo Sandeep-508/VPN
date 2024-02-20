@@ -97,7 +97,7 @@ p {
         position: fixed;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(16px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -313,10 +313,16 @@ p {
     border-radius: 25px;
     border: none;
     color: #F53838;
+    border: 2px solid #F53838;
     font-family: var(--font-fam);
     font-weight: var(--font-w-lg);
     font-size: var(--text-size-sm);
     line-height: var(--lh-18);
+    background-color: white;
+}
+
+.pt-180 {
+    padding-top: 180px;
 }
 
 .changes:hover {
@@ -324,6 +330,11 @@ p {
     color: white;
 }
 
+@media (max-width: 992px) {
+    .pt-35 {
+        padding-top: 35px;
+    }
+}
 
 .brder {
     border: 3px solid #EEEFF2;
@@ -432,8 +443,26 @@ p {
     line-height: var(--lh-30);
 }
 
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.copy {
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-nm);
+    font-size: var(--text-size-sm);
+    line-height: var(--lh-30);
+    color: var(--light-text-color);
+}
 
+.copy_vpn {
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-nm);
+    font-size: var(--text-size-sm);
+    line-height: var(--lh-30);
+    color: var(--light-text-color);
+}
 
 
 .slick-dots li {
@@ -463,7 +492,7 @@ p {
 }
 
 .slick-dots {
-    bottom: 0 !important;
+    bottom: -40px !important;
 }
 
 .slick-dots {
@@ -687,7 +716,7 @@ p {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .overflow-mx-sm-hid {
         overflow-x: hidden;
     }
