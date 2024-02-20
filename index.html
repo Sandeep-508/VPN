@@ -33,6 +33,7 @@
             bottom: 0px;
             width: 4000px;
             right: 100%;
+            height: 110%;
             background-color: white;
         }
     </style>
@@ -50,15 +51,15 @@
                 </div>
                 <input type="checkbox" id="menuicon" hidden>
                 <div class="d-flex align-items-center gap-3 lg-view">
-                    <p class="nav_item">Home</p>
-                    <p class="nav_item">About</p>
-                    <p class="nav_item">Features</p>
-                    <p class="nav_item">Testinomial</p>
-                    <p class="nav_item">Price</p>
+                    <p class="nav_item pointer effects">Home</p>
+                    <p class="nav_item pointer effects">About</p>
+                    <p class="nav_item pointer effects">Features</p>
+                    <p class="nav_item pointer effects">Testinomial</p>
+                    <p class="nav_item pointer effects">Price</p>
                 </div>
                 <div class="d-flex align-items-center gap-3 sm-hidden">
                     <p class="sign">Sign In</p>
-                    <button class="signup">Sign Up</button>
+                    <button class="signup px-4">Sign Up</button>
                 </div>
                 <label for="menuicon" class="d-md-none">
                     <span></span>
@@ -78,7 +79,7 @@
                         <span class="vpn">LaslesVPN</span> discover interesting
                         features from us.
                     </p>
-                    <button class="get_started shadow">Get Started</button>
+                    <button class="get_started shadow_change">Get Started</button>
                 </div>
                 <div class="col-lg-6 pt">
                     <img src="./assets/images/first_cont_img.png" alt="a boy" class="w-100 h-100">
@@ -99,7 +100,7 @@
                         <p class="user">Users</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-center justify-content-center gap-3 brdr">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center gap-3 brdr pl-45">
                     <div class="svg_box d-flex align-items-center justify-content-center w-h">
                         <img src="./assets/images/Third_cont_svg_2.svg" alt="...">
                     </div>
@@ -108,7 +109,7 @@
                         <p class="user">Locations</p>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex align-items-center justify-content-center gap-3">
+                <div class="col-lg-4 d-flex align-items-center justify-content-center gap-3 pl-25">
                     <div class="svg_box d-flex align-items-center justify-content-center w-h">
                         <img src="./assets/images/Third_cont_svg_3.svg" alt="...">
                     </div>
@@ -155,7 +156,6 @@
         </div>
     </section>
 
-
     <section class="pt-120 bg">
         <div class="container">
             <p class="plan">Choose Your Plan</p>
@@ -167,7 +167,7 @@
             <div class="row pt-120">
                 <div class="col-lg-4 col-md-6 pt-40">
                     <div
-                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4 active_change">
+                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-40 active_change">
                         <div class="pt-5">
                             <img src="./assets/images/fifth_cont_img.png" alt="a box">
                         </div>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pt-40">
                     <div
-                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4 active_change">
+                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-40 active_change">
                         <div class="pt-5">
                             <img src="./assets/images/fifth_cont_img.png" alt="a box">
                         </div>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="col-lg-4 pt-40">
                     <div
-                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4 active_change">
+                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-40 active_change">
                         <div class="pt-5">
                             <img src="./assets/images/fifth_cont_img.png" alt="a box">
                         </div>
@@ -270,7 +270,9 @@
 
     <section class="pt-120 bg">
         <div class="container">
-            <p class="network_prop text-center pb-3">Huge Global Network of Fast VPN</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <p class="network_prop text-center pb-3 max-w">Huge Global Network of Fast VPN</p>
+            </div>
             <div class="d-flex align-items-center justify-content-center">
                 <p class="other_prop text-center">See <span class="lasles_vpn">LaslesVPN</span> everywhere to make it
                     easier
@@ -315,7 +317,7 @@
         </div>
     </section>
 
-    <section class="overflow-hidden h-45">
+    <section class="overflow-hidden">
         <div class="container pt-3">
             <div class="slick_slider">
                 <div class="box_1 shadow p-3 rounded-2 min-h-250">
@@ -422,7 +424,7 @@
         </div>
     </section>
 
-    <section class="pb-5">
+    <section class="pb-5 disp-none">
         <div class="container d-flex justify-content-end gap-4 pt-30">
             <button class="prev p-3 round shadow">
                 <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -441,7 +443,7 @@
         </div>
     </section>
 
-    <section class="lg rounded-3">
+    <section class="lg rounded-3 pt-sm-105">
         <div class="container box-shadow p-4 background">
             <div class="d-flex justify-content-lg-between align-items-center flex-wrap px-50">
                 <div class="d-flex flex-column align-items-start">
@@ -531,12 +533,14 @@
             slidesToShow: 2,
             prevArrow: '.prev',
             nextArrow: '.next',
+            autoplay: true,
+            autoplaySpeed: 1000,
             slidesToScroll: 1,
             responsive: [
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,
                         dots: true
