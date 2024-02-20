@@ -32,14 +32,14 @@
             bottom: 0px;
             width: 4000px;
             right: 100%;
-            background-color: #FAFAFA;
+            background-color: white;
         }
     </style>
 </head>
 
 <body>
     <section>
-        <nav class="position-fixed w-100 bg-white py-3">
+        <nav class="position-fixed w-100 bg-white py-3 z-3">
             <div class="container d-flex justify-content-between">
                 <div class="heading d-flex align-items-center gap-2">
                     <div>
@@ -72,8 +72,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <p class="lorem">Want anything to be easy with <span class="lasles">LaslesVPN.</span></p>
-                    <p class="lorem_text">Provide a network for all your needs with ease and fun using
+                    <p class="lorem pb-3">Want anything to be easy with <span class="lasles">LaslesVPN.</span></p>
+                    <p class="lorem_text pb-5">Provide a network for all your needs with ease and fun using
                         <span class="vpn">LaslesVPN</span> discover interesting
                         features from us.
                     </p>
@@ -126,7 +126,7 @@
                 <div class="col-lg-6">
                     <img src="./assets/images/forth_cont.png" alt="..." class="w-100 h-100">
                 </div>
-                <div class="col-lg-6 pt-105">
+                <div class="col-lg-6 pt-xl-180 pd-max-xl-105">
                     <p class="features">We Provide Many Features You Can Use</p>
                     <p class="explore pt-3">You can explore the features that we provide with fun and have their own
                         functions each feature.
@@ -165,7 +165,8 @@
             </div>
             <div class="row pt-120">
                 <div class="col-lg-4 col-md-6 pt-40">
-                    <div class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4 active_change">
                         <div class="pt-5">
                             <img src="./assets/images/fifth_cont_img.png" alt="a box">
                         </div>
@@ -193,7 +194,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 pt-40">
-                    <div class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4 active_change">
                         <div class="pt-5">
                             <img src="./assets/images/fifth_cont_img.png" alt="a box">
                         </div>
@@ -225,7 +227,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 pt-40">
-                    <div class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center brder rounded-2 pb-4 active_change">
                         <div class="pt-5">
                             <img src="./assets/images/fifth_cont_img.png" alt="a box">
                         </div>
@@ -266,7 +269,7 @@
 
     <section class="pt-120 bg">
         <div class="container">
-            <p class="network_prop text-center">Huge Global Network of Fast VPN</p>
+            <p class="network_prop text-center pb-3">Huge Global Network of Fast VPN</p>
             <div class="d-flex align-items-center justify-content-center">
                 <p class="other_prop text-center">See <span class="lasles_vpn">LaslesVPN</span> everywhere to make it
                     easier
@@ -311,8 +314,8 @@
         </div>
     </section>
 
-    <section class="bg overflow-hidden">
-        <div class="container">
+    <section class="overflow-hidden h-45">
+        <div class="container pt-3">
             <div class="slick_slider">
                 <div class="box_1 shadow p-3 rounded-2 min-h-250">
                     <div class="d-flex justify-content-between">
@@ -418,7 +421,7 @@
         </div>
     </section>
 
-    <section class="bg pb-5">
+    <section class="pb-5">
         <div class="container d-flex justify-content-end gap-4 pt-30">
             <button class="prev p-3 round shadow">
                 <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -438,18 +441,20 @@
     </section>
 
     <section class="lg rounded-3">
-        <div class="container shadow p-4 d-flex justify-content-lg-between align-items-center">
-            <div class="d-flex flex-column align-items-start">
-                <p class="sub_text mx-width">Subscribe Now for Get Special Features!</p>
-                <p class="random">Let's subscribe with us and find the fun.</p>
-            </div>
-            <div>
-                <button class="subscribe shadow px-5 py-3 border-0 rounded-2">Subscribe Now</button>
+        <div class="container box-shadow p-4 background">
+            <div class="d-flex justify-content-lg-between align-items-center flex-wrap px-50">
+                <div class="d-flex flex-column align-items-start">
+                    <p class="sub_text mx-width">Subscribe Now for Get Special Features!</p>
+                    <p class="random">Let's subscribe with us and find the fun.</p>
+                </div>
+                <div>
+                    <button class="subscribe shadow px-5 py-3 border-0 rounded-2">Subscribe Now</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg pt-83">
+    <section class="back_color pt-83 pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -459,17 +464,48 @@
                         </div>
                         <p class="heading_text">Lasles<span>VPN</span></p>
                     </div>
-                    <p class="footer_lorem pt-3"><span class="lasle">LaslesVPN</span> is a private virtual network that has unique
+                    <p class="footer_lorem pt-3"><span class="lasle">LaslesVPN</span> is a private virtual network that
+                        has unique
                         features and has
                         high security.</p>
                     <div class="d-flex gap-3 pt-3">
-                        <img src="./assets/images/facebook.svg" alt="...">
-                        <img src="./assets/images/twitter.svg" alt="...">
-                        <img src="./assets/images/instagram.svg" alt="...">
+                        <img src="./assets/images/facebook.svg" alt="..." class="transition">
+                        <img src="./assets/images/twitter.svg" alt="..." class="transition">
+                        <img src="./assets/images/instagram.svg" alt="..." class="transition">
                     </div>
                 </div>
-                <div class="col-lg-6"></div>
+                <div class="col-lg-6 d-flex justify-content-lg-end">
+                    <div class="wid">
+                        <ul class="px-0 d-flex flex-column gap-3">
+                            <li class="fotter_head">Products</li>
+                            <li class="fotter_items">Download</li>
+                            <li class="fotter_items">Pricing</li>
+                            <li class="fotter_items">Locations</li>
+                            <li class="fotter_items">Pricing</li>
+                            <li class="fotter_items">Servers</li>
+                            <li class="fotter_items">Blogs</li>
+                        </ul>
+                    </div>
+                    <div class="wid">
+                        <ul class="d-flex flex-column gap-3">
+                            <li class="fotter_head">Engage</li>
+                            <li class="fotter_items">LaslesVpn?</li>
+                            <li class="fotter_items">FAQ</li>
+                            <li class="fotter_items">About Us</li>
+                            <li class="fotter_items">Privary Policy</li>
+                            <li class="fotter_items">Terms of Services</li>
+                            <li class="fotter_items">Tutorials</li>
+                        </ul>
+                    </div>
+                    <ul class="d-flex flex-column gap-3">
+                        <li class="fotter_head">Earn Money</li>
+                        <li class="fotter_items">Affiliate Marketing</li>
+                        <li class="fotter_items">Become partner</li>
+                    </ul>
+
+                </div>
             </div>
+        </div>
         </div>
     </section>
 

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
-/* * {
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-    text-decoration: none !important;
-} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
 
 :root {
     --text-size-sm: 16px;
@@ -463,6 +463,11 @@ p {
 }
 
 .slick-dots {
+    top: 25px;
+    position: relative !important;
+}
+
+.slick-dots {
     display: flex !important;
 }
 
@@ -503,9 +508,9 @@ p {
     width: 50px !important;
 }
 
-.slick-dots {
+/* .slick-dots {
     background-color: #FAFAFA;
-}
+} */
 
 
 
@@ -562,7 +567,15 @@ p {
 }
 
 .lg {
-    background: linear-gradient(to bottom, #FAFAFA 50%, #F8F8F8 50%);
+    background: linear-gradient(to bottom, #FFFFFF 50%, #F8F8F8 50%);
+}
+
+.box-shadow {
+    box-shadow: 10px 10px 30px -7px rgba(13, 16, 37, 0.78);
+}
+
+.background {
+    background-color: white;
 }
 
 .footer_lorem {
@@ -574,9 +587,69 @@ p {
     max-width: 340px;
 }
 
+.active_change:hover {
+    border: 3px solid #F53838;
+}
+
 .lasle {
     font-family: var(--font-fam);
     font-weight: var(--font-w-md);
     font-size: var(--text-size-sm);
     line-height: var(--lh-30);
+}
+
+.fotter_head {
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-md);
+    font-size: var(--text-size-18);
+    line-height: var(--lh-30);
+}
+
+.fotter_items {
+    font-family: var(--font-fam);
+    font-weight: var(--font-w-nm);
+    font-size: var(--text-size-16);
+    line-height: var(--lh-30);
+    color: var(--light-text-color);
+    transition: all 100ms linear;
+}
+
+.fotter_items:hover {
+    color: #F53838;
+    cursor: pointer;
+}
+
+.wid {
+    width: 33.33%;
+}
+
+.back_color {
+    background-color: #F8F8F8;
+}
+
+
+.transition:hover {
+    transform: translateY(10px);
+}
+
+
+.px-50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.h-45 {
+    height: 45vh !important;
+}
+
+@media (min-width: 1400px) {
+    .pt-xl-180 {
+        padding-top: 180px;
+    }
+}
+
+@media (max-width: 1399.9px) {
+    .pd-max-xl-105 {
+        padding-top: 105px;
+    }
 }
